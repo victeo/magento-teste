@@ -99,6 +99,52 @@ You can check if the data has been imported by using SQL queries in the MySQL Co
 
 ## 2. Configure the database and access data in the .env file
 
+### Description
+
+The `.env` file in Magento 2 is a configuration file used to store environment-specific settings, such as database connection details, base URLs, and encryption keys. This file allows for easy management of environment-specific configurations without modifying core files.
+
+### Configuration Steps
+
+1. **Create the `.env` File**:
+
+   - Navigate to your Magento 2 root directory and create a new file named `.env`.
+
+2. **Define Environment Variables**:
+
+   - Open the `.env` file and add the following environment variables with their respective values:
+
+   ```dotenv
+   # Database Configuration
+   DB_HOST=localhost
+   DB_NAME=your_database_name
+   DB_USER=your_database_user
+   DB_PASSWORD=your_database_password
+
+   # Base URLs
+   BASE_URL=http://localhost/
+   SECURE_BASE_URL=https://localhost/
+
+   # Encryption Key
+   ENCRYPTION_KEY=your_encryption_key
+    ```
+Replace **your_database_name**, **your_database_user**, **your_database_password**, and **your_encryption_key** with your specific values.
+
+3. **Load Environment Variables (Optional)**:
+
+If your project uses a package like Dotenv, it can automatically load the .env file. Otherwise, you may need to manually load the variables in your application.
+
+4. **Configure Magento 2:**
+
+Run the following commands to apply the configuration changes:
+```bash
+php bin/magento setup:upgrade
+php bin/magento setup:static-content:deploy -f
+php bin/magento cache:clean
+```
+### **Note**
+Ensure that the `.env` file is kept secure and not exposed publicly, as it may contain sensitive information.
+This `.env` file provides a convenient way to manage environment-specific configurations in Magento 2 without directly modifying core files.
+
 ## 3. Install the Magento dependencies and custom modules:
 
 ```bash
