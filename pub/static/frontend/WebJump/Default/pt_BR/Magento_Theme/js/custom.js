@@ -1,0 +1,1 @@
+/var/www/html/commerce/app/design/frontend/WebJump/Default/Magento_Theme/web/js/custom.js

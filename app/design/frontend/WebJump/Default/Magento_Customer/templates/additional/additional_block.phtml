@@ -1,0 +1,11 @@
+<?=
+/**
+ * @author   Victor Souza <vic.teodoros@gmail.com >
+ */
+/** @var Magento\Framework\View\Element\Template $block */
+
+$block->getLayout()
+    ->createBlock('Magento\Cms\Block\Block')
+    ->setBlockId('sidebar-block-left')
+    ->toHtml();
+?>

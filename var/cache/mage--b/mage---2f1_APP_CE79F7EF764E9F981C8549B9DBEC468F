@@ -1,0 +1,2 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1695278954;s:6:"expire";i:1695286154;s:4:"tags";s:49:"2f1_STORE,2f1_CONFIG,2f1_COLLECTION_DATA,2f1_MAGE";}
+[{"store_id":"1","code":"pt_BR","website_id":"1","group_id":"1","name":"pt_BR","sort_order":"0","is_active":"1"},{"store_id":"2","code":"en_US","website_id":"1","group_id":"1","name":"English (United States)","sort_order":"1","is_active":"1"},{"store_id":"3","code":"en_GB","website_id":"1","group_id":"1","name":"English (United Kingdom)","sort_order":"2","is_active":"1"}]

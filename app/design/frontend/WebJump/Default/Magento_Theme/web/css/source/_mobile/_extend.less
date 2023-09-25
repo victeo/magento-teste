@@ -1,0 +1,46 @@
+.page-wrapper {
+    .header.content {
+
+        .action.nav-toggle {
+            top: 50%;
+            left: 5%;
+            transform: translate(-50%, -50%);
+        }
+
+        .logo {
+            left: 5%;
+        }
+
+        .header-custom-actions {
+            display: flex;
+            justify-content: end;
+
+            * {
+                border: unset;
+            }
+
+            .block.block-search {
+                .block.block-content {
+                    .field.search {
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        align-items: center;
+                        direction: rtl;
+                        height: 40px;
+
+                        .control {
+                            input {
+                                margin: unset;
+                                margin-right: 8px;
+                                padding:8px;
+
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}

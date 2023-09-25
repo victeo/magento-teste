@@ -1,0 +1,1 @@
+/var/www/html/commerce/vendor/magento/module-page-builder/view/base/web/js/widget/video-background.js
