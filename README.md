@@ -24,9 +24,9 @@ The structure of the project follows the best practices of Magento 2.4:
 - `var`: Directory for temporary files, such as logs and cache.
 - `view/frontend/web`: Contains the JavaScript, CSS and image files specific to the front-end.
 
-## Installation and Configuration
+# Installation and Configuration
 
-1. Clone the repository:
+## 1. Clone the repository:
 
 ```bash
 git clone https://github.com/seu-usuario/seu-projeto.git
@@ -97,15 +97,15 @@ You can check if the data has been imported by using SQL queries in the MySQL Co
    - After completion, you can check if the data was imported by running queries in MySQL Workbench.
 
 
-2. Configure the database and access data in the .env file
+## 2. Configure the database and access data in the .env file
 
-3. Install the Magento dependencies and custom modules:
+## 3. Install the Magento dependencies and custom modules:
 
 ```bash
 composer install
 ```
 
-4. Update and compile Magento:
+## 4. Update and compile Magento:
    
  ```bash
 bin/magento setup:upgrade
@@ -114,7 +114,7 @@ bin/magento setup:upgrade
  ```bash
 bin/magento setup:di:compile
 ```  
-5. Clear the cache:
+## 5. Clear the cache:
    
  ```bash
 bin/magento cache:clean
