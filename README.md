@@ -24,10 +24,34 @@ The structure of the project follows the best practices of Magento 2.4:
 - `var`: Directory for temporary files, such as logs and cache.
 - `view/frontend/web`: Contains the JavaScript, CSS and image files specific to the front-end.
 
-## Instalação e Configuração
+## Installation and Configuration
 
-1. Clone o repositório:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/seu-usuario/seu-projeto.git
 ```
+
+2. Configure the database and access data in the .env file
+
+3. Install the Magento dependencies and custom modules:
+
+```bash
+composer install
+```
+
+4. Update and compile Magento:
+   
+ ```bash
+bin/magento setup:upgrade
+```  
+
+ ```bash
+bin/magento setup:di:compile
+```  
+5. Clear the cache:
+   
+ ```bash
+bin/magento cache:clean
+```
+
